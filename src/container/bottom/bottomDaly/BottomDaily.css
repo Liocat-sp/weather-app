@@ -1,0 +1,36 @@
+.Bottom_widged {
+    grid-column: 1/3;
+    width: 90%;
+    justify-self: center;
+    align-self: flex-start;
+    margin-left: 8%;
+}
+.Bottom_title1{
+    letter-spacing: 1.2px;
+}
+.Bottom_title1 span{
+    color: #616161;
+    font-weight: 500;
+}
+.Bottom_widged h2{
+    margin-top: 12%;
+    margin-bottom: 3%;
+}
+.Bottom_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media (max-width : 550px) {
+    .Bottom_widged {
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+    .Bottom_content {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        justify-items: center;
+    }
+}

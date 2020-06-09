@@ -1,0 +1,19 @@
+.cover{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40% 1fr;
+  grid-template-columns: 1fr 1fr 40%;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.cover_main {
+  grid-column: 1/4;
+}
+
+@media (max-width: 550px) {
+  .cover {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 1fr 1fr;
+  }
+}
